@@ -7,9 +7,10 @@ import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 public class HotelManagementJDBC {
-    private static final String DB_URL =  "jdbc:mysql://localhost:3306/hotel_management";
-    private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "";
+    // Updated database connection details
+    private static final String DB_URL = "jdbc:mysql://sql12.freesqldatabase.com:3306/sql12751545";
+    private static final String DB_USER = "sql12751545";
+    private static final String DB_PASSWORD = "pDacH9KM7Y";
 
     private int bookingId;
     private String customerName;
@@ -19,7 +20,7 @@ public class HotelManagementJDBC {
     public HotelManagementJDBC(String customerName, String roomType) {
         this.customerName = customerName;
         this.roomType = roomType;
-        this.bookingTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date()); // Fully qualified java.util.Date
+        this.bookingTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
     }
 
     public void saveBooking() {
